@@ -1,0 +1,17 @@
+[alias]
+	graph = log --pretty=oneline --decorate --abbrev-commit -n 25 --graph
+	purge = clean -f -d -x
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[core]
+	autocrlf = true
+[fetch]
+	prune = true
+[submodule]
+	recurse = true
+[rerere]
+	enabled = true
+	autoUpdate = true
